@@ -1,0 +1,433 @@
+sigma <- matrix(c(2, -8*2^(1/2), -8*2^(1/2), 1))
+sigma
+sigma <- matrix(c(2, -8*2^(1/2), -8*2^(1/2), 1), nrow = 2)
+sigma
+install.packages("mixtools")
+library("mixtools")
+ellipse(mu, sigma, alpha = .05, npoints = 250, newplot = FALSE,#
+        draw = TRUE, ...)
+ellipse(mu, sigma))
+ellipse(mu, sigma)
+ellipse(mu, sigma, 0.5)
+mu
+as.vector(mu)
+library(MASS)
+bivn <- mvrnorm(1000, mu = c(1, 3), Sigma = matrix(c(2, -8*2^(1/2), -8*2^(1/2), 1), 2))
+sigma <- matrix(c(2, -.8*2^(1/2), -.8*2^(1/2), 1), nrow = 2)
+ellipse(mu, sigma, 0.5)
+ellipse(mu, sigma, alpha = .5, npoints = 250, newplot = FALSE,#
+        draw = TRUE, plot)
+ellipse(mu, sigma, alpha = .5, npoints = 250, newplot = TRUE,#
+        draw = TRUE, plot)
+mu
+sigma
+ellipse(mu, sigma, alpha = .5, npoints = 250, newplot = TRUE,#
+        draw = TRUE, lines)
+ellipse(mu, sigma, alpha = .5, npoints = 250, newplot = TRUE,#
+        draw = TRUE, plot)
+ellipse(mu, sigma, alpha = .5, npoints = 250, newplot = TRUE)
+x <- c(1:5); y <- x
+plot(x, y, main="type=o")
+lines(x, y, type="o")
+lines(x, y, type=o)
+lines(x, y, type="o")
+par(pch=22, col="red") # plotting symbol and color #
+par(mfrow=c(2,4)) # all plots on one page #
+opts = c("p","l","o","b","c","s","S","h") #
+for(i in 1:length(opts)){ #
+  heading = paste("type=",opts[i]) #
+  plot(x, y, type="n", main=heading) #
+  lines(x, y, type=opts[i]) #
+}
+x <- c(1:5); y <- x # create some data#
+par(pch=22, col="blue") # plotting symbol and color #
+par(mfrow=c(2,4)) # all plots on one page #
+opts = c("p","l","o","b","c","s","S","h") #
+for(i in 1:length(opts){ #
+  heading = paste("type=",opts[i]) #
+  plot(x, y, main=heading) #
+  lines(x, y, type=opts[i]) #
+}
+x <- c(1:5); y <- x # create some data#
+par(pch=22, col="blue") # plotting symbol and color #
+par(mfrow=c(2,4)) # all plots on one page #
+opts = c("p","l","o","b","c","s","S","h") #
+for(i in 1:length(opts)){ #
+  heading = paste("type=",opts[i]) #
+  plot(x, y, main=heading) #
+  lines(x, y, type=opts[i]) #
+}
+x <- c(1:5); y <- x # create some data#
+par(pch=22, col="blue") # plotting symbol and color #
+par(mfrow=c(2,4)) # all plots on one page #
+opts = c("p","l","o","b","c","s","S","h") #
+for(i in 1:length(opts)){ #
+  heading = paste("type=",opts[i]) #
+  plot(x, y, main=heading) #
+}
+x <- c(1:5); y <- x # create some data#
+par(pch=22, col="blue") # plotting symbol and color #
+par(mfrow=c(2,4)) # all plots on one page #
+opts = c("p","l","o","b","c","s","S","h") #
+for(i in 1:length(opts)){ #
+  heading = paste("type=",opts[i]) #
+  lines(x, y, type=opts[i]) #
+}
+plot(-4:4, -4:4, type = "n")  # setting up coord. system#
+points(rnorm(200), rnorm(200), col = "red")#
+points(rnorm(100)/2, rnorm(100)/2, col = "blue", cex = 1.5)
+point(x,y, col="yellow")
+points(x,y, col="yellow")
+points(x,y, col="red")
+plot(-4:4, -4:4, type = "n")  # setting up coord. system
+points(x,y, col="red")
+points((x-3),(y-2), col="blue")
+runExample(“03_reactivity")
+library("shiny")
+runExample(“03_reactivity")
+runExample(“02_text")
+runExample(“01_hello")
+log(2,2,)
+help(log)
+5/14*log2(5/14)+9/14*log2(9/14)
+1*4/14+(2/3*log2(2/3)+1/3*log2(1/3))*6/14+4/14*(3/4*log2(3/4)+1/4*log2(1/4))
+1*4/14-(2/3*log2(2/3)+1/3*log2(1/3))*6/14-4/14*(3/4*log2(3/4)+1/4*log2(1/4))
+4/14*log2(4/14)-6/14*log2(6/14-4/14)*(4/14*log2(4/14))
+1*4/14+(2/3*log2(2/3)+1/3*log2(1/3))*6/14+4/14*(3/4*log2(3/4)+1/4*log2(1/4))
+(5/14*log2(5/14)+9/14*log2(9/14)) - 1*4/14-(2/3*log2(2/3)+1/3*log2(1/3))*6/14-4/14*(3/4*log2(3/4)+1/4*log2(1/4))
+-(5/14*log2(5/14)+9/14*log2(9/14)) - 1*4/14-(2/3*log2(2/3)+1/3*log2(1/3))*6/14-4/14*(3/4*log2(3/4)+1/4*log2(1/4))
+-(5/14*log2(5/14)+9/14*log2(9/14)) - (1*4/14+(2/3*log2(2/3)+1/3*log2(1/3))*6/14+4/14*(3/4*log2(3/4)+1/4*log2(1/4)))
+-(5/14*log2(5/14)+9/14*log2(9/14)) - (1*4/14-(2/3*log2(2/3)+1/3*log2(1/3))*6/14-4/14*(3/4*log2(3/4)+1/4*log2(1/4)))
+-(5/14*log2(5/14)+9/14*log2(9/14)) - (4/14*(1/2*log2(1/2)+1/2*log2(1/2))+(2/3*log2(2/3)+1/3*log2(1/3))*6/14-4/14*(3/4*log2(3/4)+1/4*log2(1/4)))
+1/2*log2(1/2)
+-(5/14*log2(5/14)+9/14*log2(9/14)) - (-1*4/14+(2/3*log2(2/3)+1/3*log2(1/3))*6/14+4/14*(3/4*log2(3/4)+1/4*log2(1/4)))
+-(5/14*log2(5/14)+9/14*log2(9/14)) + (4/14*(1/2*log2(1/2)+1/2*log2(1/2)) + (2/3*log2(2/3) + 1/3*log2(1/3))*6/14 + 4/14*(3/4*log2(3/4)+1/4*log2(1/4)))
+-(5/14*log2(5/14)+9/14*log2(9/14)) + (7/14*(3/7*log2(3/7)+4/7*log2(4/7)) + (6/7*log2(6/7) + 1/7*log2(1/7))*7/14 )
+-(5/14*log2(5/14)+9/14*log2(9/14)) - (7/14*(3/7*log2(3/7)+4/7*log2(4/7)) + (6/7*log2(6/7) + 1/7*log2(1/7))*7/14 )
+-(5/14*log2(5/14)+9/14*log2(9/14)) - (8/14*(6/8*log2(6/8)+2/8*log2(2/8)) + (3/6*log2(3/6) + 3/6*log2(3/6))*6/14 )
+-(5/14*log2(5/14)+9/14*log2(9/14)) + (8/14*(6/8*log2(6/8)+2/8*log2(2/8)) + (3/6*log2(3/6) + 3/6*log2(3/6))*6/14 )
+-(5/14*log2(5/14)+9/14*log2(9/14)) + (7/14*(3/7*log2(3/7)+4/7*log2(4/7)) + (6/7*log2(6/7) + 1/7*log2(1/7))*7/14 )
+(3/5*log2(3/5)+2/5*log2(2/5))
+-(3/5*log2(3/5)+2/5*log2(2/5))
+-(3/5*(1*log2(1))+2/5*(1/4*log2(1/4)+3/4*log2(3/4)))
+-(2/5*(1*log2(1))+3/5*(1/4*log2(1/4)+3/4*log2(3/4)))
+library("tree")#
+#
+load("/Users/weichun/Downloads/hw2upload 2/OJ_hw2.rdata")#
+ls()#
+#
+tree.OJ = tree(Purchase~., OJ.train)#
+summary(tree.OJ)#
+plot(tree.OJ)#
+text(tree.OJ, pretty = 0)
+tree.OJ
+tree.pred = predict(tree.OJ,OJ.test, type = "class")#
+table(tree.pred,High.test)
+Purchase.test = OJ.test$Purchase#
+tree.pred = predict(tree.OJ,OJ.test, type = "class")#
+table(tree.pred, Purchase.test)
+class.pred <- table(tree.pred, Purchase.test)#
+1-sum(diag(class.pred))/sum(class.pred)
+class.pred
+diag(class.pred)
+class.pred <- table(tree.pred, Purchase.test)#
+1-sum(diag(class.pred))/sum(class.pred)
+class.pred <- table(tree.pred, Purchase.test)
+class.pred
+1-sum(diag(class.pred))/sum(class.pred)
+load("/Users/weichun/NTU Space/b01705021@ntu.edu.tw/MySyncFolder/NTU/senior spring/Big Data and Business Analytics/carseats.rdata")
+set.seed(2)#
+#remove Sales#
+Carseats$Sales = NULL#
+train=sample(1:nrow(Carseats), 200)#
+Carseats.train=Carseats[train,]#
+Carseats.test=Carseats[-train,]#
+#
+tree.carseats=tree(High~.,Carseats.train)#
+tree.pred=predict(tree.carseats,Carseats.test,type="class")#
+table(tree.pred,High.test)
+library(tree)#
+#another similar package is rpart, C50#
+#
+#construct the outcome variable#
+#label high sales if Sales > 8#
+#
+Carseats$High=ifelse(Carseats$Sales<=8,"No","Yes")#
+#convert character to factor#
+Carseats$High = factor(Carseats$High)#
+#train-test evaluation#
+set.seed(2)#
+#remove Sales#
+Carseats$Sales = NULL#
+train=sample(1:nrow(Carseats), 200)#
+Carseats.train=Carseats[train,]#
+Carseats.test=Carseats[-train,]#
+#
+tree.carseats=tree(High~.,Carseats.train)#
+tree.pred=predict(tree.carseats,Carseats.test,type="class")#
+table(tree.pred,High.test)
+Carseats$High=ifelse(Carseats$Sales<=8,"No","Yes")#
+#convert character to factor#
+Carseats$High = factor(Carseats$High)#
+#train-test evaluation#
+set.seed(2)#
+#remove Sales#
+Carseats$Sales = NULL#
+train=sample(1:nrow(Carseats), 200)#
+Carseats.train=Carseats[train,]#
+Carseats.test=Carseats[-train,]#
+#
+tree.carseats=tree(High~.,Carseats.train)#
+tree.pred=predict(tree.carseats,Carseats.test,type="class")#
+table(tree.pred,High.test)
+Carseats$High=ifelse(Carseats$Sales<=8,"No","Yes")#
+#convert character to factor#
+Carseats$High = factor(Carseats$High)
+head(Carseats)
+Carseats$High=ifelse(Carseats$Sales<=8,"No","Yes")
+head(Carseats)
+ls()
+summary(Carseats$Sales)
+load("/Users/weichun/NTU Space/b01705021@ntu.edu.tw/MySyncFolder/NTU/senior spring/Big Data and Business Analytics/carseats.rdata")
+Carseats$High=ifelse(Carseats$Sales<=8,"No","Yes")#
+#convert character to factor#
+Carseats$High = factor(Carseats$High)#
+#train-test evaluation#
+set.seed(2)#
+#remove Sales#
+Carseats$Sales = NULL#
+train=sample(1:nrow(Carseats), 200)#
+Carseats.train=Carseats[train,]#
+Carseats.test=Carseats[-train,]#
+#
+tree.carseats=tree(High~.,Carseats.train)#
+tree.pred=predict(tree.carseats,Carseats.test,type="class")#
+table(tree.pred,High.test)
+table(tree.pred,Carseats.test$High)
+plot(set.seed(2)#
+train=sample(1:nrow(Carseats), 200)#
+Carseats.test=Carseats[-train,]#
+High.test=Carseats$High[-train]#
+tree.carseats=tree(High~.-Sales,Carseats,subset=train)#
+tree.pred=predict(tree.carseats,Carseats.test,type="class")#
+table(tree.pred,High.test)#
+#accuracy = 0.715#
+(86+57)/200#
+#
+)
+set.seed(2)#
+train=sample(1:nrow(Carseats), 200)#
+Carseats.test=Carseats[-train,]#
+High.test=Carseats$High[-train]#
+tree.carseats=tree(High~.-Sales,Carseats,subset=train)#
+tree.pred=predict(tree.carseats,Carseats.test,type="class")#
+table(tree.pred,High.test)#
+#accuracy = 0.715
+summary(tree.carseats)#
+plot(tree.carseats)#
+text(tree.carseats,pretty=0)#
+tree.carseats
+set.seed(2)#
+#remove Sales#
+Carseats$Sales = NULL#
+train=sample(1:nrow(Carseats), 200)#
+Carseats.train=Carseats[train,]#
+Carseats.test=Carseats[-train,]#
+#
+tree.carseats=tree(High~.,Carseats.train)
+plot(tree.carseats)
+tree.carseat
+tree.carseats
+plot(tree.carseats)
+tree.pred=predict(tree.carseats,Carseats.test,type="class")
+tree.pred
+plot(tree.carseats)
+text(tree.carseats,pretty=1)
+text(tree.carseats,pretty=0)
+text(tree.carseats,pretty=0¥8)
+text(tree.carseats,pretty=9)
+library("maptree")
+install.packages("maptree")
+library("maptree")
+draw.tree(tree.carseats)
+draw.tree(tree.OJ)
+clean()
+help()
+ls()
+library(MASS)
+ls()
+fix(Boston)
+ls()
+help(Boston)
+names(Boston)
+lm.fit=lm(medv~lstat,data=Boston)
+summary(lm.fit)
+names(lm.fit)#
+coef(lm.fit)#
+confint(lm.fit)
+predict(lm.fit,data.frame(lstat=(c(5,10,15))), interval="confidence")#
+#parameter uncertainty + uncertainty caused by "noise"#
+predict(lm.fit,data.frame(lstat=(c(5,10,15))), interval="prediction")#
+#
+#plot the regression result#
+plot(Boston$lstat, Boston$medv)
+plot(lm.fit)
+setwd("/Users/weichun/Desktop/stock")
+readData <- function(filename ){#
+#
+	data <- read.table(filename, header = TRUE, sep = ",", stringsAsFactors = FALSE)#
+	data <- data[-1,]#
+	return(data)#
+}
+data <- readData("exo_year.csv")
+data <- readData("eco_year.csv")
+head(Data)
+head(data)
+data
+data <- "a"
+data
+readData <- function(filename ){#
+#
+	data <- read.table(filename, header = TRUE, sep = ",", stringsAsFactors = FALSE)#
+	data <- data[-1,]#
+	return(data)#
+}
+data <- readData("eco_year.csv")
+head(data)
+data <- read.table("eco_year.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
+data
+data <- read.csv("eco_year.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
+data
+data <- read.csv("eco_year.csv", header = TRUE, sep = ",")
+data
+a <- read.csv("eco_year.csv", header = TRUE, sep = ",")
+a
+data <- read.csv("eco_year.csv", header = TRUE)
+data
+library("readxl")
+install.library("readxl")
+install.packages("readxl")
+library("readxl")
+livrary("base")
+library("base")
+data <- read_excel("eco_year.csv")
+data <- read_excel("eco_year.xlsx")
+data
+data <- read_excel("eco_year.xlsx", header=F)
+data <- read_excel("eco_year.xlsx", colnames=T, skip=1)
+data <- read_excel("eco_year.xlsx", col_names=T, skip=1)
+data
+data <- readData("eco_year.xlsx")
+readData <- function(filename){#
+#
+	temp <- read_excel(filename, col_names=T, skip=1)#
+	temp <- temp[-1,]#
+	return (temp)#
+}
+data <- readData("eco_year.xlsx")
+data
+data[1,]
+class(data)
+nrow(data)
+rownames(data) <- c(2000:2015)
+data
+rownames(data) <- c(1:nrow(data))
+library("graphics")
+nrow(data)-1
+data2 <- head(data, (nrow(data)-1))
+data2
+matplot(data2, type = "l", lty = 1, lwd = 1, #
+        pch = 16, col = color[1:c(nrow(data2))])
+which(data2==NA, arr.ind=T)
+which(data==NA, arr.ind=T)
+is.na(data)
+data2[,-6]
+data2[,36]
+which(data=="NA", arr.ind=T)
+typeof(data)
+class(data)
+plot(data[,1])
+which(data2=="NA", arr.ind=T)
+na_col <- unique(which(data2=="NA", arr.ind=T))
+which(data2[,-na_col]=="NA", arr.ind=T)
+data2 <- data2[,-na_col]
+color <- brewer.pal(n = 40, name = "Set3")
+library("RBrewerPower")
+install.packages("RBrewerPower")
+install.packages("RClolorBrewer")
+install.packages("RColorBrewer")
+library("RClolorBrewer")
+library("RColorBrewer")
+color <- brewer.pal(n = 40, name = "Set3")
+display.brewer.all (RColorBrewer)
+display.brewer.all(RColorBrewer)
+brewer (RColorBrewer),
+brewer (RColorBrewer)
+display.brewer.all(type="qual")
+install.packages("grDevices")
+data2
+matplot(x = data2[,1], y = data2[,2:ncol(data2)], type = "l", lty = 1, lwd = 1, #
+        pch = 16, col = 1:40)
+matplot(x = data2[,1], y = data2[,5:ncol(data2)], type = "l", lty = 1, lwd = 1, #
+        pch = 16, col = 1:40)
+matplot(data2[,5:ncol(data2)], type = "l", lty = 1, lwd = 1, pch = 16, col = 1:40)
+matplot(scale(data2[,5:ncol(data2)]), type = "l", lty = 1, lwd = 1, pch = 16, col = 1:40)
+data3 <- data.matrix(data2, rownames.force = NA)
+matplot(scale(data3[,5:ncol(data2)]), type = "l", lty = 1, lwd = 1, pch = 16, col = 1:40)
+matplot(scale(data3[,2:ncol(data2)]), type = "l", lty = 1, lwd = 1, pch = 16, col = 1:40)
+matplot(x=data3[,1], scale(data3[,2:ncol(data2)]), type = "l", lty = 1, lwd = 1, pch = 16, col = 1:40)
+matplot(x=data3[,1], scale(data3[,2:ncol(data2)]), type = "l", lty = 1, lwd = 1, pch = 16, col = 1:40)
+matplot(scale(data3[,2:ncol(data2)]), type = "l", lty = 1, lwd = 1, pch = 16, col = 1:40)
+axis(1,at=seq(1,10,1))
+axis(1,at=seq(2000,15,1))
+axis(1,at=seq(2000,data3[,2:ncol(data3)],1))
+axis(1,at=seq(2000,14,1))
+matplot(scale(data3[,2:ncol(data3)]), type = "l", lty = 1, lwd = 1, pch = 16, col = 1:40)
+ncol(data3)
+data3
+data2
+ncol(data2)
+ncol(data)
+na_col
+na_col <- unique(which(data2=="NA", arr.ind=T))
+na_col <- unique(which(data2=="NA", arr.ind=T)$row)
+na_col <- unique(which(data2=="NA", arr.ind=T)[,1])
+na_col
+readData <- function(filename){#
+#
+	temp <- read_excel(filename, col_names=T, skip=1)#
+	temp <- temp[-1,]#
+	temp <- temp[,-1]#
+	return (temp)#
+}#
+#
+data <- readData("eco_year.xlsx")#
+rownames(data) <- c(1:nrow(data))#
+#
+data2 <- head(data, (nrow(data)-1))
+na_col <- unique(which(data2=="NA", arr.ind=T))
+data2 <- data2[,-na_col]
+ncol
+ncol(data)
+ncol(data2)
+na_col
+data2 <- head(data, (nrow(data)-1))#
+na_col <- unique(which(data2=="NA", arr.ind=T)[,2])
+na_col
+ncol(data2)
+data2 <- data2[,-na_col]
+ncol(data2)
+data3 <- data.matrix(data2, rownames.force = NA)
+axis(1,at=seq(1,14,1))
+axis(1,at=seq(1,14,1),label=c(2000:2014))
+axis(1,at=seq(1,15,1),label=c(2000:2014))
+matplot(scale(data3[,2:ncol(data3)]), type = "l", lty = 1, lwd = 1, pch = 16, col = 1:40)#
+        # xlab = NULL, ylab = NULL, xlim = NULL, ylim = NULL#
+axis(1,at=seq(1,15,1),label=c(2000:2014))
+legend("topright", inset=.05, legend=colnames(data3[,2:ncol(data3)]), pch=1, col=c(1:40), horiz=TRUE)
+matplot(scale(data3[,2:ncol(data3)]), type = "l", lty = 1, lwd = 1, pch = 16, col = c(1:40))#
+        # xlab = NULL, ylab = NULL, xlim = NULL, ylim = NULL#
+axis(1,at=seq(1,15,1),label=c(2000:2014))#
+#
+legend("topright", inset=.05, legend=colnames(data3[,2:ncol(data3)]), fill=c(1:40), horiz=F)
+data2
