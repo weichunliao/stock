@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 import math
 """ """
-def term_doc_matrix(doc_list,sep=" ",specific_term=[]):
+def term_doc_matrix(doc_list,sep=" ",specific_term=[],output=""):
 	vocalbulary={}
 	doc_ind=1
 	for doc in doc_list:
@@ -16,6 +16,12 @@ def term_doc_matrix(doc_list,sep=" ",specific_term=[]):
 				vocalbulary[term]=1 #df
 		doc_ind+=1
 
+	if output:		
+		output_file=open(output,"w",encoding="utf-8")
+		for pair in sorted(vocalbulary.items(), key=lambda x: x[1],reverse=True):
+			output_file.write("{0} {1}\n".format(pair[0],pair[1]))
+		output_file.close()	
+
 	return vocalbulary		
 
 if __name__ == '__main__':
@@ -25,15 +31,15 @@ if __name__ == '__main__':
 
 
 	#file_path="C:\\Users\\Can\\Documents\\NTU\\大數據與商業分析\\stock\\ptt_stock_content.csv"
-	file_path="C:\\Users\\Can\\Documents\\NTU\\大數據與商業分析\\stock\\temp2.txt"
-	#file_path="C:\\Users\\Can\\Documents\\NTU\\大數據與商業分析\\stock\\ptt_content_seg.txt"
+	#file_path="C:\\Users\\Can\\Documents\\NTU\\大數據與商業分析\\stock\\temp2.txt"
+	file_path="C:\\Users\\Can\\Documents\\NTU\\大數據與商業分析\\stock\\ptt_content_seg.txt"
 	#file_path="C:\\Users\\Can\\Documents\\NTU\\大數據與商業分析\\stock\\temp.txt"
 	file_name, file_extension = os.path.splitext(file_path)
 
 	post=list()
 
 	#是否使用斷過詞的文章
-	is_seg=0
+	is_seg=1
 
 	if is_seg==1:
 		file=open(file_path,'r',encoding='utf-8')
@@ -46,7 +52,7 @@ if __name__ == '__main__':
 		jieba.set_dictionary('C:\\Python27\\Lib\\site-packages\\jieba-0.38-py2.7.egg\\jieba\\dict_big.txt')
 		jieba.load_userdict("C:\\Users\\Can\\Documents\\NTU\\大數據與商業分析\\stock\\stock_dict.txt")
 
-		seg_output=open(file_name+"_seg"+file_extension,"w",encoding="utf-8")
+		seg_output=open(file_name+"_seg.txt","w",encoding="utf-8")
 
 		i=1
 		with open(file_path,'r',encoding="utf-8") as data:
@@ -81,7 +87,9 @@ if __name__ == '__main__':
 	print("load company list")
 	print(" ".join(company_list))
 
-	vol=term_doc_matrix(post,sep=" ",specific_term=company_list)
+	#vol=term_doc_matrix(post,sep=" ",specific_term=company_list)
+	vol=term_doc_matrix(post,sep=" ",output=file_name+"_vol.txt")
+
 	print("finish df counting")
 
 	cc=list()
@@ -95,7 +103,7 @@ if __name__ == '__main__':
 	print("sort df")
 
 	#output the result
-	output=open(file_name+"_df"+file_extension,'w',encoding="utf-8")
+	output=open(file_name+"_df.txt",'w',encoding="utf-8")
 	for stock in cc:
 		output.write("{0} {1}\n".format(stock[0],stock[1]))	
 	output.close()
